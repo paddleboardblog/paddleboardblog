@@ -1,0 +1,25 @@
+---
+layout: default
+---
+{% include header.html
+    heading=page.title
+    subheading=page.subtitle
+    img=page.img %}
+
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        {{ content }}
+        <hr>
+        <div class="pull-left">
+          <a class="btn btn-primary" href="javascript:history.back()"><span class="glyphicon glyphicon-chevron-left"></span>&nbsp;Back</a>
+        </div>
+        <div class="pull-right">
+          <a class="btn btn-primary" href="#top"><span class="glyphicon glyphicon-chevron-up"></span>&nbsp;Top</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
